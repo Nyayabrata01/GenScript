@@ -1,128 +1,148 @@
-# 🚀 GenScript – AI-Powered Terminal Assistant
+# GenScript - AI-Powered Terminal Assistant
 
-GenScript is a cutting-edge terminal assistant that enhances your command-line experience using artificial intelligence. Powered by the Gemini API, GenScript supports natural language processing and command auto-suggestions to help you run terminal commands faster and more efficiently.
+GenScript is an advanced AI-powered terminal assistant designed to enhance your command-line experience. With **Prompt Mode** and **Auto-Suggestion Mode**, GenScript helps users run commands faster, reducing the need to remember complex syntax. It leverages the **Gemini API** to provide intelligent command suggestions and auto-completions.
 
 ---
 
-## 🌟 Features
+## 🚀 Features
 
 ### 🔹 Prompt Mode
-- Translate natural language into terminal commands.
-- Confirm commands before execution.
-- Request clarification for ambiguous queries.
-- Terminal-style UI with loading animations.
+- Convert natural language into terminal commands.
+- If a command is found, the system asks for confirmation before executing it.
+- If the command is unclear, the user can refine their input.
+- Loading animation while processing requests.
+- Seamless UI to provide a real terminal-like experience.
 
 ### 🔹 Auto-Suggestion Mode
-- Suggests commands based on history.
-- Real-time learning from user input.
-- Press `Tab` to auto-complete.
-- Fast and efficient search mechanism.
+- Maintains a pool of frequently used commands.
+- Learns from user command history in real-time.
+- Suggests commands as the user types.
+- Press **Tab** to auto-complete commands.
+- Efficient search algorithm for retrieving the best match.
 
-### 🔹 Additional Capabilities
-- Seamless switching between Prompt and Auto-Suggestion Modes.
-- Lightweight, privacy-focused design (no permanent logging).
-- Quick exit with `exit` command.
-- Clean and responsive CLI experience.
+### 🔹 Additional Features
+- **Toggle Modes Easily:** Switch between **Prompt Mode** and **Auto-Suggestion Mode** effortlessly.
+- **Quit Option:** Easily exit the assistant when needed.
+- **Lightweight & Fast:** Runs efficiently in the background.
+- **Privacy-Focused:** Commands are stored only in memory and not logged permanently.
 
 ---
 
 ## 📦 Installation
 
-GenScript supports macOS and Linux. Follow these steps:
+GenScript can be installed on **macOS** and **Linux** with a single command.
 
-```bash
-# Step 1: Download the Installation Script
-curl -o genscript.sh http://genscript.deploylite.tech/genscript.sh
+### **Step 1: Download the Installation Script**
+```sh
+curl -o script.sh http://genscript.deploylite.tech/genscript.sh
+```
 
-# Step 2: Make the Script Executable
+### **Step 2: Make the Script Executable**
+```sh
 chmod +x genscript.sh
+```
 
-# Step 3: Run the Installation Script
+### **Step 3: Run the Installation Script**
+```sh
 ./genscript.sh
-🛠 Usage
-✅ Start GenScript
-bash
-Copy
-Edit
+```
+
+---
+
+## 🛠 Usage
+
+### **Start GenScript**
+```sh
 genscript
-🧠 Prompt Mode
-Type a natural language command.
+```
 
-GenScript interprets and confirms the shell command before execution.
+### **Prompt Mode (Natural Language Commands)**
+1. Type a request in natural language.
+2. GenScript processes it using the **Gemini API**.
+3. If a valid command is found, it is displayed with a confirmation prompt.
+4. If confirmed, the command executes.
+5. If not found, an error message is displayed.
+6. Users can refine their query if the command is incorrect.
 
-Example:
-
-sql
-Copy
-Edit
+#### Example:
+```sh
 user@GenScript🤖:~$ AI> Create a new directory named 'projects'
-Output:
 
-bash
-Copy
-Edit
 Here is the command: mkdir projects
 Do you want to run it? (yes/no)
-✨ Auto-Suggestion Mode
-Type part of a command.
+```
 
-Suggestions appear based on history.
+### **Auto-Suggestion Mode (Command History & Auto-Completion)**
+1. As the user types, GenScript suggests relevant commands.
+2. Suggestions are based on previously used commands.
+3. Press **Tab** to auto-complete the command.
+4. Execute as usual.
 
-Press Tab to auto-complete.
-
-Example:
-
-ruby
-Copy
-Edit
+#### Example:
+```sh
 user@GenScript🤖:~$ git cl
+
 Did you mean: git clone <repo_url>? Press Tab to complete.
-🔄 Toggle Modes
-Press Alt + M to switch between Prompt and Auto-Suggestion modes.
+```
 
-❌ Quit GenScript
-bash
-Copy
-Edit
-exit
-📚 Documentation
-Quick Start Guide – Fast setup instructions.
+### **Toggle Between Modes**
+- Use **Alt + M** to switch between **Prompt Mode** and **Auto-Suggestion Mode**.
 
-Configuration – Customize GenScript to your workflow.
+### **Quit GenScript**
+```sh
+type exit
+```
 
-Command Reference – Explore available features.
+---
 
-API Documentation – Learn about integrating GenScript.
+## 📜 Documentation
 
-📖 Full documentation coming soon.
+### **1. Quick Start Guide**
+- Learn how to install and configure GenScript in minutes.
 
-🧠 How It Works
-🗣 Prompt Mode Workflow
-Accepts natural language input.
+### **2. Configuration**
+- Customize settings to fit your workflow.
 
-Sends the query to Gemini API.
+### **3. Command Reference**
+- Explore all available commands and options.
 
-Displays matched command for confirmation.
+### **4. API Documentation**
+- Integrate GenScript with other tools.
 
-Executes or refines based on user response.
+[View Full Documentation](http://genscript.deploylite.tech/docs)
 
-🔍 Auto-Suggestion Mode Workflow
-Monitors user input in real-time.
+---
 
-Suggests matching commands from history.
+## 🤖 How It Works
 
-Auto-complete via Tab.
+### **Prompt Mode Workflow**
+1. User submits a request in natural language.
+2. The request is processed via the **Gemini API**.
+3. If a command is found:
+   - It is displayed for confirmation.
+   - If confirmed, the command executes.
+4. If not found, an error is returned.
 
-Executes command normally.
+### **Auto-Suggestion Mode Workflow**
+1. User starts typing a command.
+2. GenScript suggests possible completions from history.
+3. Press **Tab** to auto-complete.
+4. Execute as usual.
 
-🤝 Contributing
-We welcome community contributions! If you have suggestions, bug fixes, or feature requests:
+---
 
-bash
-Copy
-Edit
-# Clone the repo
+## 🛠 Contributing
+We welcome contributions! If you have suggestions, bug fixes, or feature requests, please check our **GitHub repository**.
+
+### **Clone the Repository**
+```sh
 git clone https://github.com/your-repo/genscript.git
 cd genscript
-Submit pull requests or open issues. Let's improve GenScript together!
+```
 
+### **Submit Issues**
+- Report bugs and suggest features on our **[GitHub Issues](https://github.com/your-repo/genscript/issues)** page.
+
+---
+
+### ⚡ Supercharge your terminal with GenScript today! 🚀
