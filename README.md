@@ -136,7 +136,11 @@ We welcome contributions! If you have suggestions, bug fixes, or feature request
 
 ### **Clone the Repository**
 ```sh
+<<<<<<< HEAD
 git clone https://github.com/your-repo/genscript.git
+=======
+git clone https://github.com/Nyayabrata01/GenScript.git
+>>>>>>> e9e68e1bd8ef20b20fd0afead9199a00e44e1f1b
 cd genscript
 ```
 
@@ -145,6 +149,7 @@ cd genscript
 
 ---
 
+<<<<<<< HEAD
 ## 📜 License
 This project is licensed under the **MIT License**.
 
@@ -157,3 +162,6 @@ This project is licensed under the **MIT License**.
 
 ### ⚡ Supercharge your terminal with GenScript today! 🚀
 
+=======
+### ⚡ Supercharge your terminal with GenScript today! 🚀
+>>>>>>> e9e68e1bd8ef20b20fd0afead9199a00e44e1f1b
