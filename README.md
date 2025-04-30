@@ -136,7 +136,7 @@ We welcome contributions! If you have suggestions, bug fixes, or feature request
 
 ### **Clone the Repository**
 ```sh
-git clone https://github.com/your-repo/genscript.git
+git clone https://github.com/Nyayabrata01/GenScript.git
 cd genscript
 ```
 
